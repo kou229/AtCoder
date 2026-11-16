@@ -10,3 +10,7 @@ __pycache__/
 
 # oj (online-judge-tools) のキャッシュ
 .oj/
+
+# コンテストの解答は公開しない（フォルダだけ残す）
+contests/*
+!contests/.gitkeep
