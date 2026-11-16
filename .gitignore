@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / エディタ
+.DS_Store
+.vscode/
+.idea/
+
+# oj (online-judge-tools) のキャッシュ
+.oj/
