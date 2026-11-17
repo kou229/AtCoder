@@ -30,6 +30,16 @@ def LI():
     return list(map(int, input().split()))
 
 
+# 整数の行を n 行読んで、行ごとのリストで受け取る
+#   入力: N M のあとに A_i B_i が M 行
+#     n, m = MI()
+#     ab = LLI(m)              → ab = [[A1, B1], [A2, B2], ...]
+#     for a, b in ab: ...      → 1行ずつ取り出す
+#     A, B = map(list, zip(*ab))  → 列ごとに分ける（A = [A1, A2, ...]）※ m = 0 だと使えない
+def LLI(n):
+    return [list(map(int, input().split())) for _ in range(n)]
+
+
 # 文字列を1つ読む（末尾の改行を取り除く）
 #   入力: abc      → s = S()
 def S():
